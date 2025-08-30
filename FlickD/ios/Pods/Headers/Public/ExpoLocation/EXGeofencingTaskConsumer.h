@@ -1,0 +1,1 @@
+../../../../../node_modules/expo-location/ios/TaskConsumers/EXGeofencingTaskConsumer.h

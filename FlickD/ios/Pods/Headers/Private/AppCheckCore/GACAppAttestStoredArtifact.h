@@ -1,0 +1,1 @@
+../../../AppCheckCore/AppCheckCore/Sources/AppAttestProvider/Storage/GACAppAttestStoredArtifact.h

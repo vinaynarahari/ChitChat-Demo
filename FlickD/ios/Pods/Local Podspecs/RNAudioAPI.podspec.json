@@ -1,0 +1,78 @@
+{
+  "name": "RNAudioAPI",
+  "version": "0.6.5",
+  "summary": "react-native-audio-api provides system for controlling audio in React Native environment compatible with Web Audio API specification",
+  "homepage": "https://github.com/software-mansion/react-native-audio-api#readme",
+  "license": "MIT",
+  "authors": "Software Mansion Labs (https://github.com/software-mansion)",
+  "platforms": {
+    "ios": "15.1"
+  },
+  "source": {
+    "git": "https://github.com/software-mansion/react-native-audio-api.git",
+    "tag": "0.6.5"
+  },
+  "ios": {
+    "frameworks": [
+      "CoreFoundation",
+      "CoreAudio",
+      "AudioToolbox",
+      "Accelerate",
+      "MediaPlayer",
+      "AVFoundation"
+    ]
+  },
+  "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32  -DRCT_NEW_ARCH_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
+  "pod_target_xcconfig": {
+    "USE_HEADERMAP": "YES",
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
+    "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) HAVE_ACCELERATE=1",
+    "HEADER_SEARCH_PATHS": "\"$(PODS_TARGET_SRCROOT)/common/cpp\" \"$(PODS_TARGET_SRCROOT)/ios\" \"$(PODS_ROOT)/boost\" \"$(PODS_ROOT)/Headers/Private/Yoga\"",
+    "OTHER_CFLAGS": "$(inherited) -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -DRCT_NEW_ARCH_ENABLED -DAUDIOAPI_VERSION=0.6.5",
+    "OTHER_CPLUSPLUSFLAGS": "$(inherited) -DRCT_NEW_ARCH_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
+    "OTHER_SWIFT_FLAGS": "$(inherited) -DRCT_NEW_ARCH_ENABLED"
+  },
+  "dependencies": {
+    "React-Core": [],
+    "RCT-Folly": [
+      "2024.11.18.00"
+    ],
+    "glog": [],
+    "React-RCTFabric": [],
+    "ReactCodegen": [],
+    "RCTRequired": [],
+    "RCTTypeSafety": [],
+    "ReactCommon/turbomodule/bridging": [],
+    "ReactCommon/turbomodule/core": [],
+    "React-NativeModulesApple": [],
+    "Yoga": [],
+    "React-Fabric": [],
+    "React-graphics": [],
+    "React-utils": [],
+    "React-featureflags": [],
+    "React-debug": [],
+    "React-ImageManager": [],
+    "React-rendererdebug": [],
+    "DoubleConversion": [],
+    "React-jsi": [],
+    "React-renderercss": [],
+    "hermes-engine": [],
+    "React-hermes": []
+  },
+  "subspecs": [
+    {
+      "name": "audioapi",
+      "source_files": "common/cpp/audioapi/**/*.{cpp,c,h}",
+      "header_dir": "audioapi",
+      "header_mappings_dir": "common/cpp/audioapi",
+      "subspecs": [
+        {
+          "name": "ios",
+          "source_files": "ios/audioapi/**/*.{mm,h,m}",
+          "header_dir": "audioapi",
+          "header_mappings_dir": "ios/audioapi"
+        }
+      ]
+    }
+  ]
+}

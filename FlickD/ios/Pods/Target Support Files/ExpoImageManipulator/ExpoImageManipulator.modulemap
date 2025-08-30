@@ -1,0 +1,6 @@
+module ExpoImageManipulator {
+  umbrella header "ExpoImageManipulator-umbrella.h"
+
+  export *
+  module * { export * }
+}

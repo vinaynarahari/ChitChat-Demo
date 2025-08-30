@@ -1,0 +1,47 @@
+{
+  "name": "chitchat-server",
+  "version": "1.0.0",
+  "description": "ChitChat Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test:valkey": "node test-valkey-runner.js",
+    "test:redis": "node test-valkey-compatibility.js",
+    "test:pubsub": "node test-redis-pubsub.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.826.0",
+    "@aws-sdk/client-sns": "^3.826.0",
+    "@aws-sdk/client-transcribe": "^3.826.0",
+    "@google-cloud/speech": "^7.1.0",
+    "@huggingface/inference": "^2.6.4",
+    "@react-native-community/netinfo": "^11.4.1",
+    "@types/uuid": "^10.0.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.0.3",
+    "expo-av": "^15.1.6",
+    "expo-blur": "^14.1.5",
+    "expo-file-system": "^18.1.10",
+    "express": "^4.18.2",
+    "ioredis": "^5.6.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^5.1.0",
+    "mongoose": "^8.15.1",
+    "openai": "^5.3.0",
+    "react-native-reanimated-carousel": "^4.0.0",
+    "redis": "^5.5.6",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

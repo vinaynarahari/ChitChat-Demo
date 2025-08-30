@@ -1,0 +1,18 @@
+{
+  "name": "react-native-voice",
+  "version": "3.1.5",
+  "summary": "React Native Native Voice library for iOS and Android",
+  "license": "MIT",
+  "authors": "Sam Wenke <samwenke@gmail.com>",
+  "homepage": "https://github.com/react-native-voice/voice",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/react-native-voice/voice.git"
+  },
+  "source_files": "ios/**/*.{h,m}",
+  "dependencies": {
+    "React-Core": []
+  }
+}

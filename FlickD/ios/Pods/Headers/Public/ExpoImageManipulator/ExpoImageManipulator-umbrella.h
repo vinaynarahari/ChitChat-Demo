@@ -1,0 +1,1 @@
+../../../Target Support Files/ExpoImageManipulator/ExpoImageManipulator-umbrella.h

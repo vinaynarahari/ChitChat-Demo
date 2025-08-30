@@ -1,0 +1,1 @@
+../../../../../../../../node_modules/react-native-audio-api/common/cpp/audioapi/core/effects/StereoPannerNode.h
