@@ -1,6 +1,0 @@
-module ExpoContacts {
-  umbrella header "ExpoContacts-umbrella.h"
-
-  export *
-  module * { export * }
-}

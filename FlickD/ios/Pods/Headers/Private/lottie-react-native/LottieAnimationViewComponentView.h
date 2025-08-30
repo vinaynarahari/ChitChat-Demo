@@ -1,1 +1,0 @@
-../../../../../node_modules/lottie-react-native/ios/Fabric/LottieAnimationViewComponentView.h

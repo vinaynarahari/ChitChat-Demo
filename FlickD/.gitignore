@@ -37,3 +37,30 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# iOS
+ios/Pods/
+ios/build/
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+ios/DerivedData/
+ios/*.xcuserstate
+
+# Android
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+android/*.iml
+android/app/release/
+android/app/debug/
+
+# Large files
+*.dSYM/
+*.framework/
+*.xcframework/
+*.bundle/
+*.ipa
+*.apk
+*.aab
